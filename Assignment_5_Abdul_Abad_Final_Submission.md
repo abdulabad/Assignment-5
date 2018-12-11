@@ -55,9 +55,9 @@ on whether or not the student completed a session
     ## n= 378 
     ## 
     ##      CP nsplit rel error xerror     xstd
-    ## 1 0.052      0     1.000  1.084 0.035034
+    ## 1 0.052      0     1.000  1.116 0.034193
     ## 2 0.012      1     0.948  1.012 0.036587
-    ## 3 0.010      2     0.936  1.000 0.036803
+    ## 3 0.010      2     0.936  0.992 0.036941
 
     #Plot the tree
     post(c.tree, file = "tree.ps", title = "Session Completion Action: 1 - Ask teacher, 2 - Start new session, 3 - Give up")
@@ -83,6 +83,7 @@ Take a look at our outcome variable "score"
     hist(D1$score)
 
 ![](Assignment_5_Abdul_Abad_Final_Submission_files/figure-markdown_strict/unnamed-chunk-4-1.png)
+![Histogram](http://127.0.0.1:24412/chunk_output/2015B7F4FAFE7044/DB1292A0/cgwmt0a14s0hc/000003.png)
 
 Create a categorical outcome variable based on student score to advise the teacher using an "ifelse" statement
 ==============================================================================================================
@@ -100,7 +101,8 @@ Plot tree
     plot(score_ctree)
 
 ![](Assignment_5_Abdul_Abad_Final_Submission_files/figure-markdown_strict/unnamed-chunk-7-1.png)
-
+![Decision
+Tree](http://127.0.0.1:24412/chunk_output/2015B7F4FAFE7044/DB1292A0/cb8ql1516d2tf/000003.png)
 Please interpret the tree, which two behaviors do you think the teacher
 should most closely pay attemtion to?
 
